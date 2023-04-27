@@ -1,0 +1,22 @@
+.main_frame{
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+.sub_frame{
+   
+  width: 200px;
+  height: 200px;
+}
+input{
+    height: 50px;
+    width: 200px;
+}
+.action{
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+.btn{
+    width: 38px;
+}
