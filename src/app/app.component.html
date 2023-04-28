@@ -1,12 +1,15 @@
 <div class="main_frame ">
-  <div class="sub_frame ">
-    <input type="text" [(ngModel)]="number" placeholder="calculator">
-    <div class="action ">
-      <button class="btn rounded-1 btn-outline-dark">+</button>
-      <button class="btn rounded-1 btn-outline-dark">-</button>
-      <button class="btn rounded-1 btn-outline-dark">/</button>
-      <button class="btn rounded-1 btn-outline-dark">*</button>
-      <button (click)="submit()" class="btn rounded-1 btn-outline-dark">></button>
+  <form (ngSubmit)="submit()">
+    <div class="sub_frame ">
+      <input type="text" [(ngModel)]="number" placeholder="calculator">
+      <div class="action ">
+        <button class="btn rounded-1 btn-outline-dark">+</button>
+        <button class="btn rounded-1 btn-outline-dark">-</button>
+        <button class="btn rounded-1 btn-outline-dark">/</button>
+        <button class="btn rounded-1 btn-outline-dark">*</button>
+        <button type="submit" class="btn rounded-1 btn-outline-dark">></button>
+      </div>
     </div>
-  </div>
+  </form>
+  <p *ngIf="result !== null">Result: {{ result }}</p>
 </div>
